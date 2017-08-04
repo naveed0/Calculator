@@ -1,0 +1,28 @@
+body{
+	background-color: green;
+	color: green;
+}
+
+.age{
+	padding: 50px 20px;
+	background-color: #D0D0D0;
+	margin: 20px 0px;
+	border-radius: 10px;
+}
+
+
+.age-input label{
+	font-size: 24px;
+}
+.result-box{
+	background-color: white;
+	height: 200px;
+	padding:0px 30px;
+}
+
+.pucit{
+	padding: 50px 20px;
+	background-color: #D0D0D0;
+	margin: 20px 0px;
+	border-radius: 10px;
+}
