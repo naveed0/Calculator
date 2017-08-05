@@ -15,6 +15,7 @@
 		</div>
 		<div class="container">
 			<div class="age">
+				<h1>Calculate Your Age</h1>
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 						<form role="form" class="age-input">
@@ -24,14 +25,29 @@
 							</div>
 							<div class="form-group">
 								<label>Date Of Birth</label>
-								<input type="date" class="form-control" id="birth-date" required>
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+										<input type="number" class="form-control" id="date" required placeholder="Date" >
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+										<input type="number" class="form-control" id="month" required placeholder="Month">
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+										<input type="number" class="form-control" id="year" required placeholder="Year">
+									</div>
+								</div>
 							</div>
 							<button class="btn btn-default" onclick="calculateAge()" type="button">Calculate</button>
 						</form>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-						<div class="result-box">
-							<h1>Hey <span id="user-name"></span>! <br> Your Age is : <span id="user-age"></span></h1>
+						<div class="result-box" style="display:none;">
+							<h1><span id="user-name"></span> <br> <span id="user-age"></span></h1>
+							<h2>
+								<span id="user-in-days"></span>
+								</br><span id="user-in-months"></span>
+								</br><span id="user-in-years"></span>
+							</h2>
 						</div>
 					</div>
 				</div>
@@ -39,6 +55,7 @@
 		</div>
 		<div class="container">
 			<div class="pucit">
+				<h1>Calculate Your PUCIT Aggregate</h1>
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 						<form role="form" class="age-input">
@@ -60,7 +77,7 @@
 										<input type="number" class="form-control" id="f-o-n" placeholder="Obtained marks" required>
 									</div>
 									<div class="col-lg-6">
-										<input type="name" class="form-control" id="f-t-n" placeholder="Total marks" >
+										<input type="number" class="form-control" id="f-t-n" placeholder="Total marks" >
 									</div>
 								</div>
 							</div>
@@ -68,7 +85,7 @@
 								<label>PUCIT Entry Test</label>
 								<div class="row">
 									<div class="col-lg-6">
-										<input type="name" class="form-control" id="t-n" placeholder="Obtained marks" required>
+										<input type="number" class="form-control" id="t-n" placeholder="Obtained marks" required>
 									</div>
 								</div>
 							</div>
@@ -76,13 +93,13 @@
 						</form>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
-						<div class="result-box">
-							<h1><br> Your Aggregate is : <span id="user-aggregate"></span></h1>
+						<div class="result-box1" style="display:none;">
+							<h1></br><span id="user-aggregate"></span></h1>
+							<h3 id="chance" style="color:red"></h3>
 						</div>
 					</div>
 			</div>
 		</div>
-		<button type="button" name="button" onclick="none"></button>
 		<script src="js/javascript.js" charset="utf-8"></script>
 	</body>
 </html>

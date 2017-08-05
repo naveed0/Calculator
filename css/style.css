@@ -4,7 +4,7 @@ body{
 }
 
 .age{
-	padding: 50px 20px;
+	padding:20px;
 	background-color: #D0D0D0;
 	margin: 20px 0px;
 	border-radius: 10px;
@@ -14,14 +14,13 @@ body{
 .age-input label{
 	font-size: 24px;
 }
-.result-box{
+.result-box , .result-box1{
 	background-color: white;
-	height: 200px;
-	padding:0px 30px;
+	padding:0px 30px 10px;
 }
 
 .pucit{
-	padding: 50px 20px;
+	padding:20px;
 	background-color: #D0D0D0;
 	margin: 20px 0px;
 	border-radius: 10px;
